@@ -1,19 +1,9 @@
-# Taller: Principios SOLID y Patrones de Diseño — App de Soporte de Automóviles
-
-Proyecto base: [juanjoleong/Best-Practices-Udla-Workshop](https://github.com/juanjoleong/Best-Practices-Udla-Workshop)
+# Tarea: Aplicacion de Mejores practicas en Core MVC
 
 ASP.NET Core MVC (.NET 8) que gestiona un listado de vehículos en memoria: alta de
 Mustang/Explorer/Escape, encendido/apagado de motor y carga de combustible. Este
 README documenta los problemas encontrados en el código original y las mejoras
 aplicadas en términos de principios SOLID y patrones de diseño.
-
-## Índice
-- [Problemas identificados](#problemas-identificados)
-- [Principios SOLID aplicados](#principios-solid-aplicados)
-- [Patrones de diseño aplicados](#patrones-de-diseño-aplicados)
-- [Estructura del proyecto](#estructura-del-proyecto)
-- [Cómo correrlo localmente](#cómo-correrlo-localmente)
-- [Despliegue](#despliegue)
 
 ## Problemas identificados
 
@@ -72,11 +62,6 @@ heredan esos defaults y solo definen cómo construir su tipo concreto de
 `Vehicle`. Agregar una propiedad nueva el próximo sprint se reduce a
 modificar un único archivo (`VehicleBuilder.cs`).
 
-> El documento técnico completo, con diagramas UML de los tres patrones y
-> la justificación detallada de cada decisión, está en
-> [`Documento_Tecnico_Workshop_SOLID_Patrones.docx`](./Documento_Tecnico_Workshop_SOLID_Patrones.docx)
-> dentro de este repositorio.
-
 ## Estructura del proyecto
 
 ```
@@ -98,7 +83,6 @@ Requiere [.NET SDK 8.0](https://dotnet.microsoft.com/download) o superior.
 ```bash
 cd BestPractices
 dotnet restore
-dotnet dev-certs https --trust   # solo la primera vez, para HTTPS local
 dotnet run
 ```
 
