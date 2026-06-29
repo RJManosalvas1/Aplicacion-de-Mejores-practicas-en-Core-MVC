@@ -76,22 +76,4 @@ BestPractices/
 └── Infraestructure/DependencyInjection/  # Registro de todas las abstracciones en el contenedor de DI
 ```
 
-## Cómo correrlo localmente
-
-Requiere [.NET SDK 8.0](https://dotnet.microsoft.com/download) o superior.
-
-```bash
-cd BestPractices
-dotnet restore
-dotnet run
-```
-
-Abrir `https://localhost:5001` (o la URL HTTP que indique la consola).
-
-## Despliegue
-
-La app está dockerizada (`Dockerfile` en la raíz, basado en `mcr.microsoft.com/dotnet/aspnet:8.0`)
-y desplegada en Render como Web Service de tipo Docker. Render inyecta la
-variable de entorno `PORT`, que Kestrel toma vía `--urls http://0.0.0.0:$PORT`.
-
-**URL del proyecto desplegado:** _agregar aquí el link de Render una vez creado el servicio_.
+**URL del proyecto desplegado:** https://aplicacion-de-mejores-practicas-en-core.onrender.com
